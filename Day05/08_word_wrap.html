@@ -3,13 +3,28 @@
 <head>
     <style>
         /* 여기에 작성해보세요:) */
+        .container{
+            margin: auto;
+            width: 900px;
+            padding: 50px;
+            border: 1px solid gray;
+	}
+
+    p.test{
+        width: 11em;
+        border: 1px solid black;
+        /* overflow: hidden; */
+        /* ↑ 넘치는 컨텐츠(이미지나 텍스트) 숨김 */
+        word-wrap: break-word;
+        /* 넘치는 컨텐츠를 자동으로 잘라서 다음줄로 넘겨준다 */
+    }
 
 
     </style>
 </head>
 <body>
     <div class="container">
-        <p class="test">
+        <p class="test">  
             매우 긴 단어가 있는 경우에 자동으로 잘라준다.
             aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
         </p>
