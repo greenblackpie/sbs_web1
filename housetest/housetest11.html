@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML 레이아웃</title>
-    <!-- 폰트 -->
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-    <!-- 나눔 펜 스크립트 폰트를 넣어봄 -->
+    
+
     <style>
         *{box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -15,35 +15,33 @@
             font-family: 'Nanum Pen Script', cursive;
         }
 
-        /* # : id 속성을 지정하는 선택자*/
         #header {
             background-color: lightgray;
             height: 100px;
 
         }
-        #nav {
+        
+        #nav  {
             background-color: #339999;
             color: wheat;
             width: 200px;
             height: 300px;
-            float: left; 
-            
-
+            float: left;
         }
 
-
-        #seciton{
+        #section{ 
             width: calc(100% - 200px);
             height: 300px;
             text-align: left;
             float: left;
             padding: 10px;
             border: 1px solid #339999;
-            
+
         }
-         /* calc 는 화면 크기 100프로에서 200픽셀만큼 빼고 싶을때 쓰는 함수 같은 태그 */
-         
-        #footer{
+
+        
+
+        #footer {
             background-color: #ffcc00;
             height: 100px;
             clear: both;
@@ -56,13 +54,15 @@
         #header, footer { line-height: 100px;}
         #nav, section {line-height: 240px;}
 
+        
     </style>
-
-
+    
+    
+    
 </head>
 <body>
-
-    <h1>div 요소를 이용한 레이아웃<h1>
+    
+    <h1>div 요소를 이용한 레이아웃</h1>
     <div id="header">
         <h2>HEADER 영역</h2>
     </div>
@@ -78,10 +78,5 @@
 
 
 
-
-
-
-
-    
-    </body>
+</body>
 </html>
