@@ -2,7 +2,7 @@
 
 /* TODO: 여기에 작성해보세요 */
 /*    *는 전체 선택자 라고 함!, 모든 요소를 지정하는 선택자 */
-* { margin: 0; padding: 0;;}
+* { margin: 0; padding: 0;}
 
 /*태그 선택자 : 태그의 이름으로 요소를 지정하는 선택자 */
 header {
@@ -28,7 +28,7 @@ header ul li{
 }
 
 article{
-    min-height: 500px;
+    min-height: 500px; /* mh500쓰면 자동완성 */
 }
  
 article section{
@@ -37,8 +37,8 @@ article section{
 }
 article aside{
     float: left;
-    widows: 200px;
-    background-color: fedd31;
+    width: 200px;
+    background-color: #fedd31;
     padding: 20px;
     text-align: center;
 }

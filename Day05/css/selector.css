@@ -49,9 +49,11 @@ article aside{
     width: 200px;
     min-height: 500px;
     background-color: yellow;
+    /* bc:yellow 쓰면 자동완성 */
     padding: 20px;
     text-align: center;
     box-sizing: border-box;
+    /* bxs 쓰면 자동완성 */
 }
 
 footer{
