@@ -36,7 +36,7 @@ input[type^='b'] {
         근데 이 태그 속성을 잘 알아보기 위해서 위 예시처럼 한 것! */
 
 input[type^='b']:hover {
-    border: 1px solid cornflowerblue;
+    border: 1px solid red;
     background-color: lightskyblue;
     cursor: pointer;
 }
@@ -45,5 +45,6 @@ input[type^='b']:hover {
 input[type^='b']:active {
     border: 1px solid #f3a1a1;
     background-color: #c77a7a;
-
+}
 /* TODO: 여기에 작성해보세요 */
+

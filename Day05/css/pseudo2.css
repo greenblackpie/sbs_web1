@@ -59,7 +59,7 @@ table.first tr:nth-child(even) {
 /* TODO: 여기에 작성해보세요 */
 table.first th,
 table.first td{
-    border-left: 1px olid #ccc;
+    border-left: 1px solid #ccc;
 
 }
 
