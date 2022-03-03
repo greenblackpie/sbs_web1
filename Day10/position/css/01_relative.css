@@ -24,7 +24,7 @@ h1{
 }
 
 /* position : relative */
-.container .relative{
+.container .relative {
     position: relative; /* 초기 위치를 기준으로 위치 설정 */
     border: 3px solid black;
 }
