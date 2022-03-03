@@ -1,0 +1,52 @@
+
+*{ margin: 0; padding: 0; text-align: center;}
+
+.box{
+    width: 900px;
+    height: 600px;
+    margin: 50px auto;
+}
+
+
+/* 모양 */
+.ellipse{
+    background: 
+            radial-gradient(ellipse, #706fd3 0%, #40407a 50%, #aaa69d 100%);
+}
+
+
+.circle{
+    background: 
+            radial-gradient(circle, #706fd3 0%, #ff793f 50%, #ffda79 100%);
+}
+
+/* 사이즈 */
+.closest-corner{
+    background:
+        radial-gradient(closest-corner at 60% 55%, blue, green, yellow, pink);
+}
+/* 중심점이 최대한 가까운 코너에 인접해서 원이 사각형안에 접해서 그라데이션 형성 */
+
+.closest-side{
+    background:
+        radial-gradient(closest-side at 60% 55%, blue, green, yellow, pink);
+}
+
+.farthest-corner{
+    background:
+        radial-gradient(farthest-corner at 60% 55%, blue, green, yellow, pink);
+}
+
+.farthest-side{
+    background:
+        radial-gradient(farthest-side at 60% 55%, blue, green, yellow, pink);
+}
+
+
+/* 중첩(누적) 그라디언트 */
+.stacked-radial {
+    background:
+        radial-gradient(circle at 50% 0, rgba(255,0,0, 0.5), rgba(255,0,0,0) 70%),
+        radial-gradient(circle at 7% 75%, rgba(0,0,255, 0.5), rgba(255,0,0,0) 70%),
+        radial-gradient(circle at 93% 75%, rgba(0,255,0, 0.5), rgba(255,0,0,0) 70%);
+}
