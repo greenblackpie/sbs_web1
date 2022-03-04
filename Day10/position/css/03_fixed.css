@@ -54,3 +54,14 @@ h1{
 .seventh { top: 400px; left: 500px; }
 .eighth { top: 600px; left: 500px; }
 
+header {
+    position: sticky;
+    top: 0;
+    width: 1200px;
+    height: 80px;
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+}
