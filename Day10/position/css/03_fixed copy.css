@@ -7,7 +7,7 @@ h1{
 .container{
     position: relative;
     width: 1200px;
-    height: 800px;
+    height: 3000px;
     border: 5px dashed orange;
     margin: auto;
 }
@@ -23,9 +23,9 @@ h1{
     font-size: 48px;
 }
 
-/* position : absolute */
-.container .absolute{
-    position: absolute; /* 부모 요소를 기준으로 위치 설정 */
+/* position : fixed */
+.container .fixed{
+    position: fixed; /* 브라우저(전체화면)를 기준으로 위치 설정 */
     border: 3px solid black;
 }
 
@@ -53,3 +53,4 @@ h1{
 .sixth { top: 200px; left: 500px; }
 .seventh { top: 400px; left: 500px; }
 .eighth { top: 600px; left: 500px; }
+
