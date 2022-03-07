@@ -1,0 +1,105 @@
+
+.container{
+    position: relative;
+    margin: 0 auto;
+    width: 1400px;
+    border: 3px dashed orange;
+    box-sizing: border-box;
+}
+
+.transition1,
+.transition2,
+.transition3 {
+    width: 200px;
+    height: 200px;
+    background-color: cornflowerblue;
+}
+
+.transition1 { transition: width 2s; }
+.transition1:hover {width: 600px;}
+
+.transition2 { transition: height 2s; }
+.transition2:hover { height: 600px; }
+
+.transition3 { transition: width 1s, height 2s; } /* 가로가 먼저 늘어나고, 높이가 나중까지 늘어나는 걸 볼 수 있음!*/
+.transition3:hover { width: 800px; height: 400px; }
+
+.transition4,
+.transition5,
+.transition6,
+.transition7,
+.transition8 {
+    width: 200px;
+    height: 200px;
+    background-color: royalblue;
+}
+
+.transition4:hover,
+.transition5:hover,
+.transition6:hover,
+.transition7:hover,
+.transition8:hover {
+    width: 1400px;
+}
+
+.transition4 {
+    /* linear   : 일정한 속도로 움직임이 변환 */
+    transition-timing-function: linear;
+    transition-duration: 3s;
+}
+
+.transition5 {
+    /* ease   : 처음에는 아주 빠르고 마지막에 느려지는 움직임 */
+    transition-timing-function: ease;
+    transition-duration: 3s;
+}
+
+.transition6 {
+    /* ease-in  : 천천히 가다가 마지막에 조금 빨라지는 움직임 */
+    transition-timing-function: ease-in;
+    transition-duration: 3s;
+}
+
+.transition7 {
+    /* ease-out  :  약간 일정하게 가다가 마지막에 느려지는 움직임*/
+    transition-timing-function: ease-out;
+    transition-duration: 3s;
+}
+
+.transition8 {
+    /* ease-in-out  :  느리게 가다가 중간에 빨라지다가 마지막에 다시 느려지는 움직임*/
+    transition-timing-function: ease-in-out;
+    transition-duration: 3s;
+}
+
+
+
+.transition9{
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+
+    transition-delay: 3s; /* 움직임을 구현하기 전에 딜레이가 됐다가 움직임이 실행됨 */
+    transition-duration: 2s; 
+}
+
+.transition9:hover { width: 1000px;}
+
+.transition10{
+    width: 200px;
+    height: 200px;
+    background-color: crimson;
+
+    transition-duration: 3s;
+    /* 3차 베지어 곡선을 이용한 변환 속도를 지정하는 함수 */
+    transition-timing-function: cubic-bezier(0,.64,.98,.13);
+    /* ttfu쓰면 자동완성 */
+
+}
+
+.transition10:hover { width: 1400px;}
+
+
+
+
+
