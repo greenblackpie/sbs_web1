@@ -39,18 +39,14 @@ a{
 }
 
 /* inner */
-#login{width: 100%; height: 100%;}
+#login{ width: 100%; height: 100%; }
 
 
 /* 로고 */
-.longin .login-logo{
+.login .login-logo{
     height: 200px;
     margin-top: 50px;
     margin-bottom: 30px;
 }
 
-.longin .login-logo img {
-    width: 100%; 
-    height: 200px;
-    object-fit: cover;
-}
+#login .login-logo img { width: 100%; height: 200px; object-fit: cover; }
