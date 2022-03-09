@@ -68,6 +68,9 @@ a {
     box-sizing: border-box;
 }
 
+/* ::placeholder
+    -input 태그의 placeholder 속성을 선택하는 가상선택자
+*/
 #login .login-inputbox input::placeholder{
     color: #aaa;
 }
@@ -84,6 +87,7 @@ a {
 
 /* :focus
     -input 태그에 마우스 커서가 놓인 상태를 선택
+    - 키보드 커서로 바뀌는 형태로 바뀌거나 a태그의 하이퍼링크를 클릭했을때의 경우를 focus라고 함
 */
 #login .login-inputbox input:focus ~ .border{
     width: 100%;
