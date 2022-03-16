@@ -1,15 +1,12 @@
 @charset "UTF-8";
 /* NotoSans */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 /* font-family: 'Noto Sans KR', sans-serif; */
-
 
 /* 나눔스퀘어 */
 @font-face {
     font-family: "NanumSquare_acB";         /* 폰트 사용 이름 */
     src: url("fonts/NanumSquare_acB.ttf");  /* 폰트 파일 경로 */
 }
-
 
 /* 전체 영역 */
 .wrap {
@@ -24,6 +21,7 @@
 /* 전체 폰트 지정 */
 body { font-family: 'Noto Sans KR', sans-serif; }
 
+
 /* 헤더 영역 */
 header { 
     display: flex;
@@ -32,7 +30,6 @@ header {
     /* border-bottom: 1px solid black; */
 }
 
-
 header #gnb-logo { 
     width: 240px;
     height: 90px;
@@ -40,7 +37,6 @@ header #gnb-logo {
     background-size: auto 90px;
     text-indent: -9999px;
 }
-
 
 header nav ul.gnb { height: 90px; }
 header nav ul.gnb li { 
@@ -52,9 +48,7 @@ header nav ul.gnb li {
     font-size: 1.2rem;
 }
 
-
 header nav ul.gnb li a { font-family: "NanumSquare_acB"; }
-
 
 header nav ul.gnb li:hover a { 
     color: cornflowerblue;
@@ -63,20 +57,19 @@ header nav ul.gnb li:hover a {
  }
 
 
-
 header .category {
     height: 90px;
     line-height: 90px;
     padding: 0 30px;
     box-sizing: border-box;
 }
+
 header .category .btn {
     padding: 10px 40px;
     background-color: cornflowerblue;
     color: white;
     cursor: pointer;
 }
-
 
 /* 모바일 햄버거 메뉴  */
 .mb-category { display: none; }
@@ -95,7 +88,6 @@ header .category .btn {
     overflow: hidden;
 }
 
-
 .sidebar .inner {
     position: absolute;
     top: 50%;
@@ -105,14 +97,12 @@ header .category .btn {
     text-align: center;
 }
 
-
 .sidebar .inner a {
     display: block;
     font-size: 60px;
     margin-bottom: 40px;
     color: #ddd;
 }
-
 
 .sidebar .inner a:hover {
     /* background-color: black; */
@@ -121,9 +111,7 @@ header .category .btn {
     transition: all 0.3s;
 } 
 
-
 input[name='category'] { display: none; }
-
 
 /* category 를 체크했으 했을 때, 사이드 바 */
 input#category:checked ~ .sidebar {
@@ -131,7 +119,6 @@ input#category:checked ~ .sidebar {
     opacity: 1;
     z-index: 3;
 }
-
 
 
 .sidebar .close { 
@@ -143,13 +130,13 @@ input#category:checked ~ .sidebar {
     cursor: pointer;
 }
 
+
 /* 이미지 슬라이드 */
 section.slide {
     width: 4200px;      /* 이미지 1400px X 3장 = 4200px */
     height: 400px;
     position: relative;
 }
-
 
 section.slide ul {
     position: absolute;
@@ -168,11 +155,20 @@ section.slide ul li img {
     height: 100%;
 }
 
+@keyframes slide {
+    0% { left: 0; }
+    33% { left: -1400px; }
+    66% { left: -2800px; }
+    100% { left: 0; }
+}
+
+
 /* section .title */
 section .title { color: #000; text-align: center;}
 section .title h2 { font-size: 45px; margin-bottom: 5px; font-weight: normal; }
 section .title h2 span { color: #ff8342; }
 section .title p { font-size: 18px; color: #555; }
+
 
 /* section - contents */
 section.contents { background-color: #fff; padding: 80px 0;}
@@ -182,7 +178,6 @@ section.contents ul li a { display: block; width: 100%; height: 100%; }
 section.contents ul li a p.img { width: 100%; overflow: hidden; height: 300px; }
 section.contents ul li a p.img img { width: 100%; height: 100%; transition: all 1s; } 
 section.contents ul li a:hover p.img img { transform: scale(1.2); transition: all 1s; }
-
 
 section.contents ul li a .text { padding: 30px; }
 section.contents ul li a .text h3 { font-size: 20px; margin-bottom: 10px; }
@@ -216,7 +211,6 @@ section.service .service-list li .card {
 section.service .service-list li .card .card-img { height: 200px; }
 section.service .service-list li .card .card-img img { width: 100%; height: 100%; }
 
-
 section.service .service-list li .card .card-info {
     padding: 8px; 
     height: 180px; 
@@ -239,12 +233,12 @@ section.service .service-list li .card .card-info .btn {
     border-radius: 20px;
 }
 
-
 section.service .service-list li .card:hover {
     transform: translateY(-20px);
     transition: all 0.4s;
     box-shadow: 15px 15px 5px #ddd;
 }
+
 
 /* footer */
 footer { padding: 30px 0 50px; }
@@ -273,12 +267,12 @@ footer .inner .list li a:focus {
 }
 footer .inner .list li:last-child a { font-weight: bold; }
 
+
 /* 반응형 적용하기 */
 /* 모바일 */
 @media screen and (max-width: 600px) {
     
     .wrap { min-width: 320px; width: 95vw; margin: 0 auto; }
-
 
     header {
         position: relative;
@@ -289,9 +283,7 @@ footer .inner .list li:last-child a { font-weight: bold; }
         background-color: cornsilk;
     }
 
-
     header nav { display: none; }
-
 
     header #gnb-logo { 
         width: 120px;
@@ -299,9 +291,7 @@ footer .inner .list li:last-child a { font-weight: bold; }
         background-size: auto 40px;
     }
 
-
     header .category { display: none; }
-
 
 
     /* 모바일 햄버거 메뉴  */
@@ -313,12 +303,10 @@ footer .inner .list li:last-child a { font-weight: bold; }
         cursor: pointer;
     }
 
-
     .sidebar {width: 100%; background-color: rgba(64,64,64,0.9);}
     .sidebar .inner {}
     .sidebar .inner a { font-size: 24px; }
     .sidebar .close { font-size: 30px; }
-
 
     section.slide {
         width: 300vw;
@@ -327,26 +315,21 @@ footer .inner .list li:last-child a { font-weight: bold; }
         margin-bottom: 50px;
     }
 
-
     section.slide ul  li {
         width: 100vw;
         /* height: auto; */
     }
 
-
     section .title h2 { font-size: 1.4rem; }
-
 
     section.contents { padding: 10px 0; }
     section.contents ul li { width: 100%; }
     section.contents ul li a p.img { height: 350px; text-align: center; }
     section.contents ul li a p.img img { width: 90%;}
 
-
     section.service .service-list li { 
         width: calc(95%/2);
     }
-
 
     footer .inner .footer-logo { float: none; margin: 0 auto; text-align: center;}
     footer .inner .footer-logo img { height: 50px; }
@@ -357,12 +340,10 @@ footer .inner .list li:last-child a { font-weight: bold; }
         margin-bottom: 15px;
     }
 
-
     footer .inner .list { text-align: center; float: none;  }
     footer .inner .list li { display: inline-block; float: none; }
     footer .inner .list li a { font-size: 0.62rem;}
     footer .inner .list li a:after { top : 5px; }
-
 
 
 }
