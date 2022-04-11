@@ -9,13 +9,14 @@
 
 .transition1,
 .transition2,
-.transition3 {
+.transition3,
+.transition11 {
     width: 200px;
     height: 200px;
     background-color: cornflowerblue;
 }
 
-.transition1 { transition: width 2s; }
+.transition1 { transition: width 1s; }
 .transition1:hover {width: 600px;}
 
 .transition2 { transition: height 2s; }
@@ -102,4 +103,5 @@
 
 
 
-
+.transition11 { transition: width 1s;}
+.transition11:hover {width: 1200px;}
