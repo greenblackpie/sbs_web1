@@ -5,7 +5,7 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: cornflowerblue;
+    background-color: white;
     overflow: hidden;
 }
 
@@ -20,9 +20,9 @@
 .spinner {
     width: 50px;
     height: 50px;
-    border: 3px solid rgba(255,255,255,0.4);
-    border-top-color: white;
-    border-radius: 50%; /* border-radius는 50%가 최대! */
+    border: 5px solid rgba(191, 191, 191, 0.4);
+    border-top-color: #19BE7E;
+    border-radius: 50%;
     animation: spin 1s ease-in-out infinite;
 }
 
